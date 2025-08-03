@@ -1,0 +1,211 @@
+.page-container {
+min-height: 100vh;
+background-color: #f9fafb;
+}
+
+.chart-icon {
+width: 1rem;
+height: 1rem;
+color: #22c55e;
+position: absolute;
+top: 0.25rem;
+left: 0.5rem;
+}
+
+.dashboard-welcome {
+  text-align: center;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 6rem auto 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  animation: slideDown 1.6s ease;
+  z-index: 2;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcome-logo-container {
+position: relative;
+display: inline-block;
+margin-bottom: 2rem;
+}
+
+.logo-circle {
+width: 96px;
+height: 96px;
+background-color: #2563eb;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.logo-shield {
+width: 48px;
+height: 48px;
+color: white;
+}
+
+.logo-accent {
+position: absolute;
+top: -8px;
+right: -8px;
+width: 32px;
+height: 32px;
+background-color: #22c55e;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.logo-chart {
+width: 20px;
+height: 20px;
+color: white;
+}
+
+.dashboard-welcome h1 {
+color: #1f2937;
+margin-bottom: 1.5rem;
+font-size: 2.5rem;
+font-weight: bold;
+}
+
+.welcome-message {
+max-width: 768px;
+margin: 0 auto 3rem auto;
+color: #4b5563;
+line-height: 1.7;
+font-size: 18px;
+}
+
+.welcome-message p {
+margin-bottom: 1.5rem;
+}
+
+
+.features-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 2rem 3rem 2rem;
+}
+
+@keyframes slideDown2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-90px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.feature-card {
+background-color: white;
+border-radius: 12px;
+padding: 2rem;
+text-align: center;
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+transition: all 0.2s;
+  animation: slideDown2 1.6s ease;
+
+}
+
+.feature-card:hover {
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+transform: translateY(-2px);
+}
+
+.feature-icon {
+width: 64px;
+height: 64px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 auto 1.5rem auto;
+}
+
+.health-icon {
+background-color: #fef2f2;
+}
+
+.activity-icon {
+background-color: #f0f9ff;
+}
+
+.reward-icon {
+background-color: #fefce8;
+}
+
+.health-icon .icon {
+width: 32px;
+height: 32px;
+color: #dc2626;
+}
+
+.activity-icon .icon {
+width: 32px;
+height: 32px;
+color: #2563eb;
+}
+
+.reward-icon .icon {
+width: 32px;
+height: 32px;
+color: #ca8a04;
+}
+
+.feature-card h3 {
+color: #1f2937;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 1rem;
+}
+
+.feature-card p {
+color: #6b7280;
+line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+.dashboard-welcome {
+  padding: 2rem 1rem;
+  margin: 1rem;
+}
+
+.dashboard-welcome h1 {
+  font-size: 2rem;
+}
+
+.features-container {
+  grid-template-columns: 1fr;
+  padding: 0 1rem 2rem 1rem;
+}
+
+.navbar-inner {
+  flex-direction: column;
+  height: auto;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.nav-links {
+  gap: 1rem;
+}
+}

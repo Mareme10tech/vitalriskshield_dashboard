@@ -1,0 +1,266 @@
+/* Main Container */
+.auth-container, .login-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Welcome Section (Left Side) */
+.welcome-section {
+  flex: 1;
+  padding: 3rem;
+  background: linear-gradient(135deg, #3498db, #2c3e50);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome-logo, .auth-logo {
+  width: 180px;
+  margin-bottom: 2rem;
+}
+
+.welcome-message {
+  max-width: 600px;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+.welcome-message p {
+  margin-bottom: 1.5rem;
+  color: black;
+}
+
+/* Auth Card (Right Side) */
+.auth-card {
+  width: 100%;
+  max-width: 450px;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  box-shadow: -2px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.auth-card h2 {
+  color: #2c3e50;
+  margin-bottom: 1.8rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #34495e;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+/* Button Styles */
+.auth-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 0.5rem;
+}
+
+.auth-button:hover {
+  background-color: #2980b9;
+}
+
+/* Google Button */
+.google-auth-button {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  color: #555;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.google-auth-button:hover {
+  background-color: #f8f9fa;
+  border-color: #ccc;
+}
+
+.google-logo {
+  width: 20px;
+  height: 20px;
+}
+
+/* Divider */
+.auth-divider {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  color: #95a5a6;
+  font-size: 0.9rem;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.auth-divider::before {
+  margin-right: 1rem;
+}
+
+.auth-divider::after {
+  margin-left: 1rem;
+}
+
+/* Footer Links */
+.auth-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #7f8c8d;
+  font-size: 0.95rem;
+}
+
+.auth-footer a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Error Message */
+.auth-error {
+  color: #e74c3c;
+  background-color: #fdecea;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+  
+  .welcome-section {
+    padding: 2rem 1rem;
+  }
+  
+  .auth-card {
+    padding: 2rem 1.5rem;
+    box-shadow: none;
+    max-width: 100%;
+  }
+  
+  .welcome-logo, .auth-logo {
+    width: 150px;
+  }
+}
+
+/* Password Strength Indicator */
+.password-strength {
+  height: 4px;
+  background: #eee;
+  margin-top: 8px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.strength-0 { width: 20%; background: #e74c3c; }
+.strength-1 { width: 40%; background: #f39c12; }
+.strength-2 { width: 60%; background: #f1c40f; }
+.strength-3 { width: 80%; background: #2ecc71; }
+.strength-4 { width: 100%; background: #27ae60; }
+
+
+/* Signup Container */
+.auth-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Auth Card */
+.auth-card {
+  width: 100%;
+  max-width: 500px; /* Slightly wider for signup form */
+  padding: 3rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center horizontally */
+}
+
+/* Welcome Section - Remove for Signup */
+.signup-container .welcome-section {
+  display: none;
+}
+
+/* Form Grid - Better for signup fields */
+.signup-form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Two-column layout for name fields */
+@media (min-width: 768px) {
+  .name-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+/* Make buttons full width */
+.auth-button, .google-auth-button {
+  width: 100%;
+}
